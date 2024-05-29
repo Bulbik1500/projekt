@@ -15,3 +15,4 @@ function get_email($mail)
 }
 
 get_email($_GET["getMail"]);
+$conn -> close();
