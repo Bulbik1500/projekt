@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
+    <?php
+    include "function/db.php";
+    include "function/login.php";
+
+    ?>
     <!-- UTF-8 jest potrzeby do polskich znaków  -->
     <meta charset="UTF-8">
     <title>Strona główna</title>
@@ -8,17 +14,25 @@
     <link rel="stylesheet" href="styles/indexStyles.css">
 
 </head>
+
 <body>
     <a href="Kontakt.html" class="button">Kontakt</a>
     <a href="Cennik.html" class="button">Cennik</a>
     <div id="loginForm" class="button">
-        <!-- Wysałam dane do pliku logIn.php -->
-        <form action="php/logIn.php" method="post" >
-            <input  type="email" name="getMail" id="email" placeholder="Email">
-            <input type="password" id="password" placeholder="Hasło">
+        <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <input type="email" name="getMail" id="email" placeholder="Email">
+            <input type="password" name="getPassword" id=password" placeholder="Hasło">
             <input type="submit" value="Zaloguj">
         </form>
-        <a href="SignIn.php"><button>Don't have acc, SIGN IN </button></a>
+
     </div>
+
+    <a href="SignIn.php"><button>Don't have acc, SIGN IN </button></a>
     <a href="konto.html" id="accountButton" class="button" style="display: none;">konto</a>
+
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        login($_POST["getMail"], $_POST["getPassword"]);
+    }
+    ?>
 </body>
