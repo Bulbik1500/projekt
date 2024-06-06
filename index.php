@@ -21,7 +21,7 @@
     <div id="loginForm" class="button">
         <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <input type="email" name="getMail" id="email" placeholder="Email">
-            <input type="password" name="getPassword" id=password" placeholder="Hasło">
+            <input type="password" name="getPassword" id=password placeholder="Hasło">
             <input type="submit" value="Zaloguj">
         </form>
 

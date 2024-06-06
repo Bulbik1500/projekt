@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kontakt</title>
-    <style>
-        .header {
-            text-align: center;
-            font-size: 60px;
-            color: gray;
-        }
-        .contact-info {
-            text-align: center;
-            font-size: 18px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/kontakt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="header">
-        Informacje ogólne
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>We're here to help and answer any question you might have. We look forward to hearing from you 🙂</p>
+        </div>
+        <div class="contact-form">
+            <form action="contact.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <i class="fas fa-tag"></i>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <i class="fas fa-comment"></i>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </div>
-    <div class="contact-info">
-        <p>Numer telefonu: 123-456-789<br> </p>
-        <p>E-mail: example@example.com<br> </p>
-        <p>Adres: ul. Przykładowa 123<br> </p>
-        <p>Kod pocztowy: 12-345<br> </p>
-        <p>Godziny otwarcia w tygodniu: Poniedziałek-Piątek: 9:00-17:00 </p>
+    <div class="googlemap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6093.9156731481235!2d16.93528814907349!3d52.45674343495379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1717671670546!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
 </body>
 </html>
