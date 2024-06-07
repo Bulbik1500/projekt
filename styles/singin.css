@@ -47,7 +47,24 @@ h2 {
     font-size: 14px;
     color: #888888;
 }
+p.pass{
+    border: solid 2px green;
+    border-radius: 6px;
+    color: black;
+    background-color: lightgreen;
+    text-decoration: double;
+    width: 100%;
 
+}
+
+p.error{
+    border-radius: 6px;
+    border: solid 2px red;
+    background-color: pink;
+    color: black;
+    text-decoration: double;
+    width: 100%;
+}
 form input {
 
     display: block;

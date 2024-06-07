@@ -21,27 +21,29 @@
         </div>
         <div class="divider">Or with email</div>
         <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="email" name="Confirm_email" placeholder="Confirm Email" required>
 
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $mail_check = check(@$_POST["email"], @$_POST["Confirm_email"]);
             }
             ?>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="email" name="Confirm_email" placeholder="Confirm Email" required>
 
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-            <p class="hint">Use 8 or more characters with a mix of letters, numbers & symbols.</p>
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $pass_check = check(@$_POST["password"], @$_POST["confirm_password"]);
             }
             ?>
+
+            <input type="password" name="password" minlength="8" placeholder="Password" required>
+            <input type="password" name="confirm_password" minlength="8" placeholder="Confirm Password" required>
+            <p class="hint">Use 8 or more characters with a mix of letters, numbers & symbols.</p>
+
             <input type="inpuy" name="name" placeholder="name" required>
             <input type="input" name="surname" placeholder="surname" required>
             <label>
-                <input type="checkbox" name="terms" required> I Accept the Terms
+                <input type="checkbox" name="terms" required> I Accept the Terms </input>
             </label>
             <button type="submit" class="btn">Sign Up</button>
         </form>
@@ -55,7 +57,7 @@
 
         ?>
         <div class="login-link">
-            Already have an account? <a href="index.php">Login</a>
+            Already have an account? <a href="login.html">Login</a>
         </div>
     </div>
 </body>

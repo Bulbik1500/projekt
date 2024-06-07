@@ -29,6 +29,21 @@ iframe{
     width: 90%;
     height: 100%;
 }
+a{
+    width: 120px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+    transition: background-color 0.3s;
+    display: block;
+    float: left;
+}
 .contact-container {
     background-color: white;
     padding: 40px;
@@ -36,6 +51,7 @@ iframe{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 500px;
+    clear: both;
 }
 
 .contact-header {
@@ -88,6 +104,7 @@ iframe{
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    float: left;
 }
 
 .contact-form .btn:hover {
