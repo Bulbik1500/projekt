@@ -41,6 +41,7 @@ function add_user($email, $password, $name, $surname)
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+    
+        $conn->close();
     }
-    $conn->close();
 }

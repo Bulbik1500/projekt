@@ -21,9 +21,4 @@
     <a href="login.html"><button> Login </button></a>
     <a href="konto.html" id="accountButton" class="button" style="display: none;">konto</a>
 
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        login($_POST["getMail"], $_POST["getPassword"]);
-    }
-    ?>
 </body>
