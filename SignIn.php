@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles/singin.css">
+    <link rel="stylesheet" href="styles/errorAndpass.css">
+
 </head>
 
 <body>
