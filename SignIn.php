@@ -59,7 +59,7 @@
 
         ?>
         <div class="login-link">
-            Already have an account? <a href="login.html">Login</a>
+            Already have an account? <a href="login.php">Login</a>
         </div>
     </div>
 </body>
