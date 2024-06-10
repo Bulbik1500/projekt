@@ -1,39 +1,46 @@
+/* Resetting default margin, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Setting font family and background color for the body */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
 }
 
+/* Styling for the main page structure */
 .page {
     display: flex;
-    height: 100vh;
+    height: 100vh; /* Making page fill the viewport height */
 }
 
+/* Styling for the sidebar */
 .sidebar {
-    width: 250px;
+    width: 250px; /* Fixed width for the sidebar */
     background: #2a2b3c;
     color: #fff;
     display: flex;
     flex-direction: column;
 }
 
+/* Styling for the sidebar logo */
 .sidebar-logo {
     padding: 1rem;
     text-align: center;
 }
 
+/* Styling for the sidebar logo image */
 .sidebar-logo img {
     max-width: 100%;
     height: auto;
 }
 
+/* Styling for the sidebar navigation */
 .sidebar-nav {
-    flex-grow: 1;
+    flex-grow: 1; /* Making the navigation expand to fill the available space */
 }
 
 .sidebar-nav ul {
@@ -41,6 +48,7 @@ body {
     padding: 1rem 0;
 }
 
+/* Styling for sidebar navigation links */
 .sidebar-nav li {
     padding: 0.5rem 1rem;
 }
@@ -53,29 +61,33 @@ body {
 }
 
 .sidebar-nav a:hover {
-    background: #1e1f2c;
+    background: #1e1f2c; /* Background color change on hover */
 }
 
+/* Styling for the main content area */
 .content {
-    flex-grow: 1;
+    flex-grow: 1; /* Making the content area expand to fill the available space */
     display: flex;
     flex-direction: column;
 }
 
+/* Styling for the header */
 .header {
     background: #fff;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
 }
 
+/* Styling for the header left section */
 .header-left h1 {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
+/* Styling for the header right section */
 .header-right .btn {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
@@ -87,15 +99,17 @@ body {
 }
 
 .header-right .btn:hover {
-    background: #0056b3;
+    background: #0056b3; /* Background color change on hover */
 }
 
+/* Styling for the main content area */
 .main-content {
     padding: 1rem;
-    flex-grow: 1;
-    overflow-y: auto;
+    flex-grow: 1; /* Making the main content area expand to fill the available space */
+    overflow-y: auto; /* Adding vertical scroll if content overflows */
 }
 
+/* Styling for the hero section */
 .hero {
     background: #007bff;
     color: #fff;
@@ -105,6 +119,7 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Styling for the hero content */
 .hero-content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -115,6 +130,7 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Styling for the call to action button */
 .cta {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -126,22 +142,25 @@ body {
 }
 
 .cta:hover {
-    background: #f4f4f4;
+    background: #f4f4f4; /* Background color change on hover */
 }
 
+/* Styling for the widgets section */
 .widgets {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 1rem; /* Spacing between grid items */
 }
 
+/* Styling for individual widget */
 .widget {
     background: #fff;
     padding: 1.5rem;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
 }
 
+/* Styling for the footer */
 .footer {
     background: #333;
     color: #fff;

@@ -1,28 +1,23 @@
 <?php
-function check($x, $y)
-{
+// Function to check if two input values are the same
+function check($x, $y) {
+    // Initialize a variable to keep track of the check status
     $check = 0;
+
+    // Check if both $x and $y are not empty
     if ($y != "" && $x != "") {
+        // If $x and $y are equal, set $check to 1 and return it
         if ($y == $x) {
             $check = 1;
-            return  $check;
+            return $check;
         } else {
-            echo '<p class="error" does not mach </p>';
-            return  $check;
+            // If $x and $y are not equal, output an error message and return 0
+            echo '<p class="error">does not match</p>';
+            return $check;
         }
     } else {
-        echo '<p class="error"> cant be empty </p>';
+        // If either $x or $y is empty, output an error message
+        echo '<p class="error">cannot be empty</p>';
     }
 }
-// if ($email == $Remail) {
-//     if ($password == $Rpassword) {
-//         // pass and email correct 
-//         echo "all good";
-//         echo "\n";
-//         echo "$email | $Remail | $password | $Rpassword | $name | $surname";
-//     } else {
-//         echo "password don't match";
-//     }
-// } else {
-//     echo "email don't match";
-// }
+?>

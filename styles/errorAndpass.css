@@ -1,18 +1,17 @@
-p.pass{
-    border: solid 2px green;
-    border-radius: 6px;
-    color: black;
-    background-color: lightgreen;
-    text-decoration: double;
-    width: 100%;
-
+p.pass {
+    border: solid 2px green;        /* Green solid border of 2 pixels */
+    border-radius: 6px;               /* Rounded corners with a radius of 6 pixels */
+    color: black;                   /* Text color is black */
+    background-color: lightgreen;   /* Background color is light green */
+    text-decoration: double;          /* Double underline decoration */
+    width: 100%;                      /* Full width of the parent container */
 }
 
-p.error{
-    border-radius: 6px;
-    border: solid 2px red;
-    background-color: pink;
-    color: black;
-    text-decoration: double;
-    width: 100%;
+p.error {
+    border-radius: 6px;               /* Rounded corners with a radius of 6 pixels */
+    border: solid 2px red;          /* Red solid border of 2 pixels */
+    background-color: pink;         /* Background color is pink */
+    color: black;                   /* Text color is black */
+    text-decoration: double;          /* Double underline decoration */
+    width: 100%;                      /* Full width of the parent container */
 }
