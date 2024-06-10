@@ -7,11 +7,11 @@ function check($x, $y)
             $check = 1;
             return  $check;
         } else {
-            echo "does not mach";
+            echo '<p class="error" does not mach </p>';
             return  $check;
         }
     } else {
-       echo "can't be empty";  
+        echo '<p class="error"> cant be empty </p>';
     }
 }
 // if ($email == $Remail) {

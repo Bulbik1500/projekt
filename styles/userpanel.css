@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #2a2b3c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-logo {
+    padding: 1rem;
+    text-align: center;
+}
+
+.sidebar-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.sidebar-nav li {
+    padding: 0.5rem 1rem;
+}
+
+.sidebar-nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar-nav a:hover {
+    background: #1e1f2c;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-left h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header-right .btn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.header-right .btn:hover {
+    background: #0056b3;
+}
+
+.main-content {
+    padding: 1rem;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.hero {
+    background: #007bff;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #fff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta:hover {
+    background: #f4f4f4;
+}
+
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.widget {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
