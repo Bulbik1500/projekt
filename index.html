@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- UTF-8 jest potrzeby do polskich znaków  -->
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+    <!-- wzuciłęm cały css do innego pliku  -->
+    <link rel="stylesheet" href="styles/indexStyles.css">
+
+</head>
+<body>
+    <a href="Kontakt.html" class="button">Kontakt</a>
+    <a href="Cennik.html" class="button">Cennik</a>
+    <div id="loginForm" class="button">
+        <!-- Wysałam dane do pliku logIn.php -->
+        <form action="php/logIn.php" method="post" >
+            <input  type="email" name="getMail" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Hasło">
+            <input type="submit" value="Zaloguj">
+        </form>
+        <a href="SignIn.php"><button>Don't have acc, SIGN IN </button></a>
+    </div>
+    <a href="konto.html" id="accountButton" class="button" style="display: none;">konto</a>
+</body>
