@@ -3,7 +3,8 @@
 
 <head>
     <?php
-    include "localhost/funcion/db.php";
+    include "../function/db.php";
+    echo $DB_name;
 
     ?>
     <meta charset="UTF-8">
