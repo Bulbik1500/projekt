@@ -8,8 +8,8 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metronic 8 Demo 4</title>
-    <link rel="stylesheet" href="styles/userpanel.css">
+    <title>Ultra Media</title>
+    <link rel="stylesheet" href="../styles/userpanel.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script type="text/javascript">
@@ -27,10 +27,10 @@ session_start();
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#" onclick="go('useroptions/userorders.php')"> Orders</a></li>
+                    <li><a href="#" onclick="go('../../private/userorders.php')"> Orders</a></li>
                     <li><a href="#">Layouts</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li><a href="index.php">Logout</a></li>
+                    <li><a href="../index/index.php">Logout</a></li>
                     <li><a href="#">Settings</a></li>
                 </ul>
             </nav>

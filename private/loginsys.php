@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "function/db.php";
-include "function/pas.php";
+include "db.php";
+include "pas.php";
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -22,7 +22,7 @@ if ($result = @$conn->query($sql)) {
 
         $result->free_result();
         unset($_SESSION['error']);
-        header('Location: userpanel.php');
+        header('Location: ../../public/php/userpanel.php');
     } else {
         $_SESSION['error'] = '<p class="error">Błędne hasło lub email</p>';
         header('Location: login.php');

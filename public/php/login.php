@@ -8,8 +8,8 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
-    <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="styles/errorAndpass.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/errorAndpass.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -24,7 +24,7 @@ session_start();
             <button class="btn apple"><i class="fab fa-apple"></i> Sign in with Apple</button>
         </div>
         <div class="divider">Or with email</div>
-        <form action="loginsys.php" method="POST">
+        <form action="../../private/loginsys.php" method="POST">
             <div class="form-group">
                 <input type="email" name="email" placeholder="Email" required>
                 <i class="fas fa-envelope"></i>
@@ -37,7 +37,6 @@ session_start();
         </form>
         <?php
         if (isset($_SESSION['error'])) {
-            echo $_SESSION['error'];
             unset($_SESSION['error']);
         }
 

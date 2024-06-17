@@ -3,14 +3,14 @@
 
 <head>
     <?php
-    include "function/adduser.php";
-    include "function/check.php";
+    include "../../private/adduser.php";
+    include "../../private/check.php";
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="styles/singin.css">
-    <link rel="stylesheet" href="styles/errorAndpass.css">
+    <link rel="stylesheet" href="../styles/singin.css">
+    <link rel="stylesheet" href="../styles/errorAndpass.css">
 
 </head>
 
