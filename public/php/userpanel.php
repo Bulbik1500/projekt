@@ -23,7 +23,7 @@ session_start();
     <div class="page">
         <aside class="sidebar">
             <div class="sidebar-logo">
-                <a href="#"><img src="logo.png" alt="Logo"></a>
+                <a href="#"><img src="../images/logo.pngs" alt="Logo"></a>
             </div>
             <nav class="sidebar-nav">
                 <ul>
