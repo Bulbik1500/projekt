@@ -23,14 +23,14 @@ session_start();
     <div class="page">
         <aside class="sidebar">
             <div class="sidebar-logo">
-                <a href="#"><img src="../images/logo.pngs" alt="Logo"></a>
+                <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
             </div>
             <nav class="sidebar-nav">
                 <ul>
                     <li><a href="#" onclick="go('../../private/userorders.php')"> Orders</a></li>
                     <li><a href="#">Layouts</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li><a href="../index/index.php">Logout</a></li>
+                    <li><a href="./logout.php">Logout</a></li>
                     <li><a href="#">Settings</a></li>
                 </ul>
             </nav>

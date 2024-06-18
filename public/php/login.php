@@ -39,6 +39,9 @@ session_start();
         if (isset($_SESSION['error'])) {
             unset($_SESSION['error']);
         }
+        if (isset($_SESSION['email'])) {
+            header('Location: ./userpanel.php');
+        }
 
 
 

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UltraMedia - Strona Główna</title>
-    <script src="../js/scripts.js"></script>
-    <link rel="stylesheet" href="../styles/index.css">
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
@@ -16,12 +16,12 @@
                 <ul>
                     <li><a href="#about">O nas</a></li>
                     <li><a href="#services">Usługi</a></li>
-                    <li><a href="../html/Kontakt.html">Kontakt</a></li>
-                    <li><a href="../html/cennik.html">Cennik</a></li>
+                    <li><a href="html/Kontakt.html">Kontakt</a></li>
+                    <li><a href="html/cennik.html">Cennik</a></li>
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <a href="../php/login.php" class="button login">Login</a>
+                <a href="php/login.php" class="button login">Login</a>
                 <a href="konto.html" id="accountButton" class="button" style="display: none;">Konto</a>
             </div>
         </div>
@@ -32,7 +32,7 @@
             <h1>Witamy w UltraMedia</h1>
             <p>Profesjonalne usługi IT dla Twojej firmy</p>
             <div class="hero-logo">
-                <img src="../images/logo.png" alt="UltraMedia Logo">
+                <img src="images/logo.png" alt="UltraMedia Logo">
             </div>
         </div>
     </section>
