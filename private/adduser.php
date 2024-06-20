@@ -1,10 +1,9 @@
 <?php
 // Function to add a new user to the database
 function add_user($email, $password, $name, $surname) {
-
     // Include the database configuration file and the password hashing file
-    include "./db.php"; // This file should contain database connection details
-    include "./pas.php"; // This file should contain the cezary() function for password hashing
+    include "db.php"; // This file should contain database connection details
+    include "pas.php"; // This file should contain the cezary() function for password hashing
 
     // Create a new connection to the MySQL database using the connection details from db.php
     $conn = new mysqli($DB_servername, $DB_username, $DB_password, $DB_name);
