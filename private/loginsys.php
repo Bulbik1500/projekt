@@ -25,7 +25,7 @@ if ($result = @$conn->query($sql)) {
         header('Location: ../../public/php/userpanel.php');
     } else {
         $_SESSION['error'] = '<p class="error">Błędne hasło lub email</p>';
-        header('Location: login.php');
+        header('Location: ../../public/login.php');
     }
 }
 $conn->close();

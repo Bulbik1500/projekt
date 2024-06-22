@@ -28,7 +28,7 @@ session_start();
             <nav class="sidebar-nav">
                 <ul>
                     <li><a href="#" onclick="go('../../private/userorders.php')"> Orders</a></li>
-                    <li><a href="#">Layouts</a></li>
+                    <li><a href="#" onclick="go('addorder.php')">New order</a></li>
                     <li><a href="#">Pages</a></li>
                     <li><a href="./logout.php">Logout</a></li>
                     <li><a href="#">Settings</a></li>
