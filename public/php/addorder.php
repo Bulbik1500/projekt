@@ -35,7 +35,7 @@
 
         };
 
-        xhr.send(document.getElementById("product"));
+        xhr.send(document.getElementById("product").value);
         // Send the data to the PHP script
     </script>
 
@@ -55,7 +55,7 @@
 
                 for ($i = 1; $result->num_rows >= $i; $i++) {
                     $row = $result->fetch_assoc();
-                    echo '<option>' . $row['servicename'] . '</option>';
+                    echo '<option value="' . $row['servicename'] . '">' . $row['servicename'] . " " . $row['cost'] . '</option>';
                 }
                 $conn->close();
                 ?>

@@ -27,10 +27,10 @@ session_start();
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#" onclick="go('userorders.php')"> Orders</a></li>
+                    <li><a href="#" onclick="go('adminordes.php')"> Orders</a></li>
                     <li><a href="#" onclick="go('../public/php/addorder.php')">New order</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li><a href="./logout.php">Logout</a></li>
+                    <li><a href="../public/php/logout.php">Logout</a></li>
                     <li><a href="#">Settings</a></li>
                 </ul>
             </nav>

@@ -36,7 +36,7 @@ if ($result = @$conn->query($sql)) {
         }
     } else {
         $_SESSION['error'] = '<p class="error">Błędne hasło lub email</p>';
-        header('Location: ../../public/login.php');
+        header('Location: ../../public/php/login.php');
     }
 }
 $conn->close();
