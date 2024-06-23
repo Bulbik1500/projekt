@@ -38,7 +38,8 @@
             margin-bottom: 8px;
         }
 
-        select, input[type="text"] {
+        select,
+        input[type="text"] {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -63,6 +64,7 @@
     </style>
     <script>
         function getvalue() {
+            // Function to get the selected product value and log it to the console
             var product = document.getElementById("product").value;
             console.log("Selected Product:", product);
         }
@@ -73,8 +75,11 @@
     <div class="container">
         <h1>Formularz Zamówień</h1>
         <form action="../../private/addneworder.php" method="POST">
+            <!-- Form for submitting new orders -->
             <label for="product">Wybierz produkt:</label>
+            <!-- Label for product selection -->
             <select id="product" name="product" onchange="getvalue();">
+                <!-- Select dropdown populated dynamically from database -->
                 <?php
                 session_start();
                 include "../../private/db.php";
@@ -84,19 +89,27 @@
 
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
+                        // Loop through service options retrieved from the database
                         echo '<option value="' . $row['servicename'] . '">' . $row['servicename'] . ' ' . $row['cost'] . ' PLN</option>';
+                        // Display each service name and cost in the dropdown
                     }
                 } else {
                     echo '<option value="">No products available</option>';
+                    // Display message if no products are available
                 }
                 $conn->close();
                 ?>
             </select>
             <br><br>
+            <!-- Line break and spacing -->
             <label for="description">Dodaj opis:</label>
+            <!-- Label for description input -->
             <input type="text" id="description" name="description">
+            <!-- Text input for adding description -->
             <br><br>
+            <!-- Line break and spacing -->
             <button type="submit">Dodaj nowe zamówienie</button>
+            <!-- Submit button to add new order -->
         </form>
     </div>
 </body>

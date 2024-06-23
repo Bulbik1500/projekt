@@ -1,6 +1,14 @@
 <?php
 session_start();
+
+// Redirect to user panel if already logged in
+if (isset($_SESSION['email'])) {
+    header('Location: ./userpanel.php');
+    exit; // Ensure that script stops execution after redirection
+}
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,18 +43,15 @@ session_start();
             </div>
             <button type="submit" class="btn">Sign In</button>
         </form>
+        
         <?php
+        // Display error message if set
         if (isset($_SESSION['error'])) {
-            echo $_SESSION['error'];
-            unset($_SESSION['error']);
+            echo '<div class="error-message">' . $_SESSION['error'] . '</div>';
+            unset($_SESSION['error']); // Clear the session error after displaying
         }
-        if (isset($_SESSION['email'])) {
-            header('Location: ./userpanel.php');
-        }
-
-
-
         ?>
+
         <div class="forgot-password">
             <a href="#">Forgot Password?</a>
         </div>

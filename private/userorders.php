@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../public/styles/userorder.css">
     <title>User Orders</title>
     <style>
+        /* Internal CSS styles for the document */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -61,9 +62,11 @@
 
 <body>
     <div class="container">
+        <!-- Main container for orders -->
         <h1>Your Orders</h1>
         <table>
             <thead>
+                <!-- Table header -->
                 <tr>
                     <th>Status</th>
                     <th>Description</th>
@@ -73,21 +76,22 @@
             </thead>
             <tbody>
                 <?php
-                session_start();
-                include "./db.php";
-                $email = $_SESSION['email'];
-                $conn = new mysqli($DB_servername, $DB_username, $DB_password, $DB_name);
-                $sql = 'SELECT orders.orderID, orders.email, orders.status, orders.description, orders.servicename, users.name, services.cost FROM orders LEFT JOIN users ON orders.email = users.email LEFT JOIN services ON orders.servicename = services.servicename WHERE orders.email = "' . $email . '" ORDER BY orders.orderID DESC';
-                $result = $conn->query($sql);
+                session_start();  // Start PHP session to access session variables
+                include "./db.php";  // Include database connection file
+                $email = $_SESSION['email'];  // Get email from session
+                $conn = new mysqli($DB_servername, $DB_username, $DB_password, $DB_name);  // Create new MySQLi connection
+                $sql = 'SELECT orders.orderID, orders.email, orders.status, orders.description, orders.servicename, users.name, services.cost FROM orders LEFT JOIN users ON orders.email = users.email LEFT JOIN services ON orders.servicename = services.servicename WHERE orders.email = "' . $email . '" ORDER BY orders.orderID DESC';  // SQL query to fetch orders for the logged-in user
+                $result = $conn->query($sql);  // Execute the query
                 while ($row = $result->fetch_assoc()) {
+                    // Loop through each row of the result set
                     echo '<tr>';
-                    echo '<td>' . $row['status'] . '</td>';
-                    echo '<td>' . $row['description'] . '</td>';
-                    echo '<td>' . $row['servicename'] . '</td>';
-                    echo '<td>' . $row['cost'] . ' PLN</td>';
+                    echo '<td>' . $row['status'] . '</td>';  // Display order status
+                    echo '<td>' . $row['description'] . '</td>';  // Display order description
+                    echo '<td>' . $row['servicename'] . '</td>';  // Display service name
+                    echo '<td>' . $row['cost'] . ' PLN</td>';  // Display cost with currency
                     echo '</tr>';
                 }
-                $conn->close();
+                $conn->close();  // Close the database connection
                 ?>
             </tbody>
         </table>

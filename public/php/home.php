@@ -11,8 +11,10 @@
 
 <body>
     <header class="animate fade-down">
+        <!-- Header section with navigation and authentication buttons -->
         <div class="container">
             <nav>
+                <!-- Navigation links -->
                 <ul>
                     <li><a href="#about">O nas</a></li>
                     <li><a href="#services">Usługi</a></li>
@@ -21,6 +23,7 @@
                 </ul>
             </nav>
             <div class="auth-buttons">
+                <!-- Authentication buttons -->
                 <a href="php/login.php" class="button login">Login</a>
                 <a href="konto.html" id="accountButton" class="button" style="display: none;">Konto</a>
             </div>
@@ -28,6 +31,7 @@
     </header>
 
     <section id="home">
+        <!-- Hero section -->
         <div class="hero animate fade-up">
             <h1>Witamy w UltraMedia</h1>
             <p>Profesjonalne usługi IT dla Twojej firmy</p>
@@ -38,18 +42,31 @@
     </section>
 
     <section id="about" class="container about-section animate fade-up">
+        <!-- About section -->
         <h2>O nas</h2>
         <p class="animate staggered fade-up">
-            UltraMedia to firma specjalizująca się w dostarczaniu najwyższej jakości usług IT. Nasza misja to wspieranie Twojej firmy w osiąganiu sukcesów poprzez nowoczesne technologie. Dzięki naszemu doświadczeniu i zaawansowanym narzędziom, jesteśmy w stanie sprostać nawet najbardziej wymagającym wyzwaniom. Nasza firma to zespół wykwalifikowanych specjalistów, którzy z pasją podchodzą do każdego zadania. Wierzymy, że technologia może być kluczem do sukcesu Twojej firmy, dlatego nieustannie dążymy do doskonalenia naszych umiejętności i usług. Współpraca z nami to gwarancja profesjonalizmu i indywidualnego podejścia do każdego klienta.
+            UltraMedia to firma specjalizująca się w dostarczaniu najwyższej jakości usług IT. Nasza misja to wspieranie
+            Twojej firmy w osiąganiu sukcesów poprzez nowoczesne technologie. Dzięki naszemu doświadczeniu i
+            zaawansowanym narzędziom, jesteśmy w stanie sprostać nawet najbardziej wymagającym wyzwaniom. Nasza firma to
+            zespół wykwalifikowanych specjalistów, którzy z pasją podchodzą do każdego zadania. Wierzymy, że technologia
+            może być kluczem do sukcesu Twojej firmy, dlatego nieustannie dążymy do doskonalenia naszych umiejętności i
+            usług. Współpraca z nami to gwarancja profesjonalizmu i indywidualnego podejścia do każdego klienta.
         </p>
         <p class="animate staggered fade-up">
-            Oferujemy szeroki zakres usług, które obejmują kompleksowe zarządzanie infrastrukturą IT, tworzenie nowoczesnych stron internetowych, a także serwis i naprawę sprzętu komputerowego. Nasz zespół składa się z wykwalifikowanych specjalistów, którzy są gotowi dostarczyć rozwiązania dostosowane do indywidualnych potrzeb naszych klientów. Nasze usługi są elastyczne i dopasowane do wymagań rynku, co sprawia, że jesteśmy w stanie zaoferować rozwiązania zarówno dla małych firm, jak i dużych przedsiębiorstw. Stawiamy na jakość, innowacyjność i satysfakcję naszych klientów, co potwierdzają liczne pozytywne opinie i referencje.
+            Oferujemy szeroki zakres usług, które obejmują kompleksowe zarządzanie infrastrukturą IT, tworzenie nowoczesnych
+            stron internetowych, a także serwis i naprawę sprzętu komputerowego. Nasz zespół składa się z wykwalifikowanych
+            specjalistów, którzy są gotowi dostarczyć rozwiązania dostosowane do indywidualnych potrzeb naszych klientów.
+            Nasze usługi są elastyczne i dopasowane do wymagań rynku, co sprawia, że jesteśmy w stanie zaoferować rozwiązania
+            zarówno dla małych firm, jak i dużych przedsiębiorstw. Stawiamy na jakość, innowacyjność i satysfakcję naszych
+            klientów, co potwierdzają liczne pozytywne opinie i referencje.
         </p>
     </section>
 
     <section id="services" class="container">
+        <!-- Services section -->
         <h2 class="animate fade-up">Usługi</h2>
         <div class="service-items">
+            <!-- Service items with animations -->
             <div class="service-item animate fade-right rotate">
                 <h3>Naprawa po zalaniu</h3>
                 <p>Specjalistyczne usługi naprawy sprzętu komputerowego po zalaniu.</p>
@@ -70,6 +87,7 @@
     </section>
 
     <footer>
+        <!-- Footer section -->
         <div class="container">
             <p>&copy; 2024 UltraMedia. Wszelkie prawa zastrzeżone.</p>
         </div>
