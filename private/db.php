@@ -3,4 +3,4 @@
 $DB_servername = "localhost";
 $DB_username = "root";
 $DB_password = "";
-$DB_name = "serwisdb";
+$DB_name = "service_db";
